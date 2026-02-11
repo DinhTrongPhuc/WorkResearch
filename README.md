@@ -1,4 +1,4 @@
-# WorkResearch result
+# WorkResearch result - Week 1
 
 **Research Task:** Research Hexagonal Architecture using controlled AI workflows.
 
