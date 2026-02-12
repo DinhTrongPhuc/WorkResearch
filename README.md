@@ -133,3 +133,59 @@ app.run();
 
 - Email Adapter: 📧 Send EMAIL: Hello world!
 - SMS Adapter: 📱 Send SMS: Hello world!
+
+# Pros and Cons (ưu nhược điểm của hexagonal architecture)
+
+A/ Ưu Điểm - lợi thế từ việc tách biệt logic business
+
+1. Dễ dàng cho kiểm thử. - **testability**
+
+- Tái sử dụng logic, test độc lập Business logic với Mock Adapter thay vì phải cài đặt, kết nối database và api thật.
+
+2. Dễ dàng cho việc thay đổi công nghệ, bảo trì - **maintainability**
+
+- Thay đổi công nghệ framework, đổi dịch vụ REST API sang GraphQl hoặc database Mongodb,Mysql,PostgreSQL,.. chỉ cần thay đổi hoặc tạo một Adapter mới.
+- Phân chia rõ logic nghiệp vụ và chi tiết kỹ thuậ, thay đổi ở một chỗ ko ảnh hưởng chỗ khác và code dễ đọc, dễ hiểu hơn.
+
+3. Tính linh hoạt cao - **flexability**
+
+- Thêm tính năng mới chỉ cần thêm port và adapter.
+- Thay đổi linh hoạt các adapter và port để ghi dữ liệu vào nguồn khác hoặc để kết nối với một port của application khác
+
+B/ Nhược Điểm
+
+1. **Complexity**:
+
+- Tăng độ phức tạp cho mã nguồn, nhiều file và folder hơn, thiết kế ban đầu khó khăn hơn. Phức tạp với người mới.
+
+2. **Running Locally**:
+
+- Một ứng dụng với nhiều thành phần application chạy độc lập, gây khó khăn khi chạy local.
+
+3. **Performance**:
+
+- Một ứng dụng với nhiều 'Hexagonal' liên kết với nhau khi request gây ra độ trễ lớn đặc biệt với các API liên kết giữa các 'Hexagonal'.
+
+# Khi nào Áp dụng Hexagonal Architecture
+
+=> Tóm gọn: tùy thuộc cốt lõi vào quy mô và độ trưởng thành của dự án.
+
+=> Cụ Thể:
+
+**Nên**
+
+- Ứng dụng lớn nhiều đầu vào, đầu ra - kết nối với dịch vụ bên ngoài hoặc nhiều nguồn dữ liệu: Sàn thương mại điện tử, ứng dụng ngân hàng,...
+
+- Ứng dụng đa nền tảng - cùng nghiệp vụ nhiều cách truy cập khác nhau: Web, mobile, desktop,...
+
+- Ứng dụng phát triển lâu dài - công nghệ thay đổi theo thời gian, cần bảo trì và mở rộng liên tục: Hệ thống quản lý doanh nghiệp, trường học,...
+
+- Hệ Thống microserver - hệ thống nhiều service nhỏ,hoạt động độc lập cần ranh giới rõ ràng.
+
+**Không nên || cân nhắc kỹ**
+
+- Ứng dụng nhỏ với CRUD cơ bản.
+
+- Ứng dụng ngắn hạn
+
+- Ứng dụng đã hoàn thiện tương đối từ lâu nhưng ko triển khai kiến trúc lục giác.
