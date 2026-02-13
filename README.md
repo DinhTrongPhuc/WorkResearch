@@ -164,7 +164,7 @@ app.run();
 
 3. **Performance**:
 
-- Một ứng dụng với nhiều 'Hexagonal' liên kết với nhau khi request gây ra độ trễ lớn đặc biệt với các API liên kết giữa các 'Hexagonal'.
+- Một ứng dụng với nhiều 'Hexagonal' liên kết với nhau khi request gây ra độ trễ lớn đặc biệt với các 'Hexagonal' liên kết bằng API.
 
 # Khi nào Áp dụng Hexagonal Architecture
 
