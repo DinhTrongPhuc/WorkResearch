@@ -239,3 +239,54 @@ ONION:                        VERTICAL SLICE:
 /application                    /update-customer (all logic)
 /infrastructure
 ```
+
+# Refernce source
+
+- [Hexagonal Architecture resources](https://jmgarridopaz.github.io/content/resources.html)
+
+- [Ports and Adapters Pattern(Hexagonal Architecture)](https://jmgarridopaz.github.io/content/hexagonalarchitecture.html)
+
+- [Hexagonal architecture the original 2005 article](https://alistair.cockburn.us/hexagonal-architecture)
+
+- [Hexagonal Architecture là gì và ứng dụng của nó?](https://viblo.asia/p/hexagonal-architecture-la-gi-va-ung-dung-cua-no-4dbZNR88ZYM#_vii-reference-7)
+
+- [Video Explanation Hexagonal- Alex Hyett](https://www.youtube.com/watch?v=bDWApqAUjEI)
+
+# Tổng kết dùng AI cho Research Hexagonal Architecture
+
+Nghiên Cứu Hexagonal Architecture - Tuần 1
+
+- **Người thực hiện: Đinh Trọng Phúc**
+
+- **Thời gian: 9/2/2026 - 13/2/2026**
+
+- **Mục tiêu: Nghiên cứu Hexagonal Architecture và các kiến trúc thay thế sử dụng 3 quy trình làm việc với AI**
+
+**Đặt Câu Hỏi với AI**: ( Nền tảng: sau khi tra cứu doc và bài viết liên quan từ nhiều nguồn để hiểu cơ bản )
+
+1.Layered Questioning (Đặt Câu Hỏi Phân Tầng) - Research → Brief → Example → Validation
+
+```
+B1: Hexagonal Architecture là gì? Có phải là một kiểu thiết kế kiến trúc hệ thống không?
+B2:Giải thích ngắn gọn vì sao Hexagonal ra đời trên sự cải tiến từ Layered Architecture.
+B3: Ví dụ về port adapter với typescript.
+B4:Diễn tả bằng lời ưu và nhược điểm của Hexagonal Architecture.Khi nào áp dụng (các trường hợp sử dụng, tình huống cụ thể) ?
+```
+
+2.Solution Exploration (Khám Phá Giải Pháp) - Explore options → Compare pros/cons → Choose with context
+
+```
+B1: Các mẫu kiến trúc thay thế cho Hexagonal có thể là gì?
+B2: So sánh 4 kiến trúc: Hexagonal, Clean, Onion, Vertical Slice.Tạo ma trận so sánh về đặc điểm, tính linh hoạt, kiểm thử, bảo trì, độ phức tạp.
+B3: Dự án lớn, dài hạn, đa nền tảng, cần bảo trì & test cao ngoài hexagon còn những kiến trúc hệ thống nào tương tự.
+B4: Dựa trên những tiêu chí và đánh giá tôi đã tổng hợp file.txt trước đó tạo ma trận so sánh 4 kiến trúc.
+```
+
+3.Iterative Refinement (Cải Tiến Lặp Lại) - Review → Summarize → Refine → Feedback → Validate
+
+```
+B1: Trong ma trận so sánh, loại bỏ những tiêu chí kém trực quan như phù hợp team và phù hợp dự án, ko đánh giá tiêu trí với mức độ cao, thấp, trung bình để so sánh độ phù hợp, ko viết tắt với thuật ngữ và giữ nguyên Tiếng anh với những từ ngữ
+B2: Kiểm tra và so sánh lại ma trận thông tin, xác định độ chính xác.
+B3: Rút gọn lại ko dịch thuật những từ ngữ quan trọng để giữ nghĩa gốc.
+B4: Tự kiểm tra lại.
+```
