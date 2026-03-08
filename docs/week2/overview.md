@@ -5,6 +5,7 @@
 Build a **Ticket Manager CLI** applying Hexagonal Architecture and controlled AI usage during development.
 
 **Focus Areas:**
+
 - Understand and apply Hexagonal Architecture (Ports & Adapters pattern)
 - Use AI with control through proper guardrails and validation (apply workflows from Week 1)
 - Build maintainable and testable code with clear boundaries
@@ -12,11 +13,12 @@ Build a **Ticket Manager CLI** applying Hexagonal Architecture and controlled AI
 ## Training Materials
 
 - Hexagonal Architecture Slides: [`slides-hexagon.md`](../../../slides-hexagon.md) - Ports & Adapters Pattern
-- AI Training Slides: [`slides-ai-training.md`](../../../slides-ai-training.md) - Controlled AI Usage (from Week 1)
+- AI Training Slides: [`slides-ai-training.md`](../../../slides-ai-training.md) - Controlled AI Usage (from Week 1)c
 
 ## Problem Statement
 
 Build a CLI tool to manage tickets stored locally in JSON files. The tool should support:
+
 - Creating tickets with title, description, status, priority, tags
 - Listing tickets with filters (by status, priority, tags)
 - Showing ticket details
